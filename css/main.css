@@ -1,0 +1,242 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+header {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Linux Libertine','Hoefler Text',Georgia,'Times New Roman',Times,serif;
+}
+
+header img {
+    margin: auto;
+    display: block;
+    width: 175px;
+}
+
+header span {
+    font-size: 14px;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-languages {
+    display: inline-grid;
+    grid-template-areas: "lang1 empty-top lang2"
+                         "lang3 logo lang4"
+                         "lang5 logo lang6"
+                         "lang7 logo lang8"
+                        "lang9 empty-bottom lang10";
+    grid-template-rows: repeat(5, 60px);
+    grid-template-columns: 200px 245px 200px;
+ 
+}
+
+.logo-languages span {
+    font-size: 12px;
+
+}
+
+.logo-languages div a {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #36c;
+}
+
+.logo-languages div a:hover {
+    text-decoration: underline;
+}
+
+.empty-top{
+    grid-area: empty-top;
+}
+
+.empty-bottom{
+    grid-area: empty-bottom;
+}
+
+.logo{
+    grid-area: logo;
+    place-self: center;
+}
+
+.logo img{
+    width: 100px;
+    width: 200px;
+}
+
+
+.lang1{
+    grid-area: lang1;
+    place-self: center;
+    justify-self: end;
+}
+
+.lang2{
+    grid-area: lang2;
+    place-self: center;
+    justify-self: start;
+}
+
+.lang3{
+    grid-area: lang3;
+    place-self: center;
+}
+
+.lang4{
+    grid-area: lang4;
+    place-self: center;
+}
+
+.lang5{
+    grid-area: lang5;
+    place-self: center;
+}
+
+.lang6{
+    grid-area: lang6;
+    place-self: center;
+}
+
+.lang7{
+    grid-area: lang7;
+    place-self: center;
+}
+
+.lang8{
+    grid-area: lang8;
+    place-self: center;
+}
+
+.lang9{
+    grid-area: lang9;
+    place-self: center;
+    justify-self: end;
+}
+
+.lang10{
+    grid-area: lang10;
+    place-self: center;
+    justify-self: start;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #a2a9b1;
+    width: 440px;
+    height: 43px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.search-container:hover {
+    border: 1px solid #72777d;
+}
+
+.search-container:focus-within {
+    border: 2px solid #36c;
+}
+
+.search-container input {
+    height: 25px;
+    width: 350px;
+    border: none;
+    margin-left: 10px;
+}
+
+.search-container button {
+    height: 43px;
+    background-color: #36c;
+    border: none;
+}
+
+.search-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.search-container select{
+    margin-right: 10px;
+    border: none;
+    background-image: none;
+}
+
+.lang-selector{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-selector-container{
+    display: inline-flex;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    background-color: #f8f9fa;
+    color: #36c;
+    padding: 5px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.translate-icon{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.arrow-down-icon{
+    height: 20px;
+    width: 20px; 
+    margin-left: 5px;
+}
+
+.border{
+    display: inline;
+    background-color: #c8ccd1;
+    height: 1px;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.default-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/245px-Wikipedia-logo-v2.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    border-top: 1px solid #c8ccd1;
+    margin-top: 20px;
+}
+
+.footer-left{
+    margin-top: 20px;
+    width: 260px;
+}
+
+.server-info-container{
+    display: flex;
+    color: #54595d;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.server-info-container p{
+    margin: 0px;
+    margin-left: 10px;
+}
