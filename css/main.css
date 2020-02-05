@@ -227,16 +227,46 @@ footer{
 .footer-left{
     margin-top: 20px;
     width: 260px;
+    font-size: 14px;
+    color: #54595d;
 }
 
 .server-info-container{
     display: flex;
-    color: #54595d;
-    font-size: 14px;
     margin-bottom: 40px;
 }
 
 .server-info-container p{
     margin: 0px;
     margin-left: 10px;
+}
+
+.download-info-container {
+    background-color: #f8f9fa;
+    border-radius: 2px;
+}
+
+.download-info-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.download-info-header-container span {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.download-icon-google{
+    width: 100px;
+    margin-right: 5px;
+}
+
+.download-icon-apple{
+    width: 115px;
+    margin-left: 5px;
+}
+
+.download-icon-container{
+    display: flex;
+    justify-content: center;
 }
