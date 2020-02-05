@@ -220,15 +220,18 @@ main {
 }
 
 footer{
+    display: flex;
     border-top: 1px solid #c8ccd1;
     margin-top: 20px;
 }
 
 .footer-left{
     margin-top: 20px;
-    width: 260px;
     font-size: 14px;
     color: #54595d;
+    display: grid;
+    justify-content: center;
+    width: 30%;
 }
 
 .server-info-container{
@@ -270,3 +273,47 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+.footer-right ul{
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-right ul li{
+    display: flex;
+    align-items: center;
+    padding:20px
+}
+
+.footer-right{
+    width: 70%;
+}
+
+
+.link-container{
+    margin-left: 10px;  
+}
+
+.link-container a{
+    color: #36c; 
+    display: block; 
+    text-decoration: none;
+    color: #36c;
+    font-size: 15px;
+}
+
+.link-container span{
+    font-size: 12px;
+}
+
+.server-info-container{
+    width: 300px;
+}
+
+.download-info-container{
+    width: 300px;
+}
+
